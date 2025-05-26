@@ -19,6 +19,7 @@ const LoginButton = () => {
     fetchUser();
   }, []);
   if (user) {
+    router.push('/onboarding')
     return (
       <Button
         className=" hover:cursor-pointer"
